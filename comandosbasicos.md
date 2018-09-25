@@ -24,7 +24,7 @@ Ver cambios en el directorio:
 ##Comandos Basicos III
 Ver diferencia entre ficheros en el directorio y el repositorio de gif:
 `git diff`
-Ver diferencia entre ficheros en el *stading* y el repositorio:
+Ver diferencia entre ficheros en el *staging* y el repositorio:
 `git diff --staged`
 Eliminar archivos:
 ~~~
@@ -36,3 +36,14 @@ Mover o renombrar archivos:
 git mv antiguo nuevo
 git commit -m "Mensaje"
 ~~~
+##Comandos Basicos IV
+Deshacer cambios con git:
+`git checkout -- nombre_fichero`
+Retirar archivos del *staging*:
+`git reset HEAD nombre_fichero`
+Complementar último commit:
+`git commit --amend -m "Mensaje"`
+Recuperar version de un fichero de commit antiguo:
+`git checkout <id_commit> -- nombre_archivo`
+Revertir un commit:
+`git revert <id_commit>`
