@@ -1,7 +1,7 @@
 # Practica 1
 ## Comandos Basicos I
 Iniciar repositorio en un directorio:
-`git init`- - -
+`git init`  
 Agregar cambios al area de staging:
 `git add`
 Validar cambios en el repositorio:
