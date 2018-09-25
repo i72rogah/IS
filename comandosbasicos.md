@@ -21,3 +21,18 @@ Listar los commits por autor:
 `git log --author="Antonio"`
 Ver cambios en el directorio:
 `git status`
+##Comandos Basicos III
+Ver diferencia entre ficheros en el directorio y el repositorio de gif:
+`git diff`
+Ver diferencia entre ficheros en el *stading* y el repositorio:
+`git diff --staged`
+Eliminar archivos:
+~~~
+git rm archivo
+git commit -m "Mensaje"
+~~~
+Mover o renombrar archivos:
+~~~
+git mv antiguo nuevo
+git commit -m "Mensaje"
+~~~
