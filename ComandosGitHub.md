@@ -48,10 +48,10 @@ Clonar un repositorio remoto:
 
 * REMOTO -> LOCAL  
   * Sincronización y unión:  
-~~~
+  ~~~
     git fetch origin  
     git merge origin/master  
-~~~
+  ~~~
   * En un solo paso:  
 
       `git pull`  
