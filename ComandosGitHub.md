@@ -69,7 +69,8 @@ Clonar un repositorio remoto:
 
     `git push -u origin branch_remoto`  
 
-* Copia:
+* Copia:  
+
   `git checkout -b local remoto`  
 
 * Eliminación:  
