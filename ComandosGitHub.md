@@ -44,7 +44,7 @@ Clonar un repositorio remoto:
 
 3. Añadir cambios a repositorio remoto:  
 
-                  `git push`  
+  `git push`  
 
 * REMOTO -> LOCAL  
   * Sincronización y unión:  
@@ -54,7 +54,7 @@ Clonar un repositorio remoto:
 ~~~
   * En un solo paso:  
 
-      `git pull`  
+        `git pull`  
 
 ## Operaciones con *branches* remotos  
 
@@ -70,7 +70,6 @@ Clonar un repositorio remoto:
     `git push -u origin branch_remoto`  
 
 * Copia:  
-
   `git checkout -b local remoto`  
 
 * Eliminación:  
