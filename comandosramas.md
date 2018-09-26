@@ -1,6 +1,6 @@
-#Practica 1  
+# Practica 1  
 
-##Comandos Ramas I  
+## Comandos Ramas I  
 
 
 Ver listado de ramas:  
