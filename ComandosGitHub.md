@@ -49,8 +49,8 @@ Clonar un repositorio remoto:
 * REMOTO -> LOCAL  
   * Sincronización y unión:  
 ~~~
-    `git fetch origin`  
-    `git merge origin/master`  
+    git fetch origin  
+    git merge origin/master  
 ~~~
   * En un solo paso:  
     `git pull`  
@@ -69,4 +69,3 @@ Clonar un repositorio remoto:
 
 * Eliminación:  
   `git push origin --delete branch_remoto`  
-  
