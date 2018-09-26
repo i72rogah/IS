@@ -26,6 +26,8 @@ Comparar ramas:
 
 
 
+
+
 ## Comandos Ramas II  
 
 
@@ -49,7 +51,11 @@ Integrar ramas a la actual:
 
 Resolver conflictos(se suele hacer manualmente):  
 
-`git merge --abort`
+`git merge --abort`  
+
+
+  
+
 
 
 
@@ -76,4 +82,3 @@ Aplicar cambio del stash:
 git stash apply nombre_stash
 git stash pop nombre_stash  
 ~~~  
-  
