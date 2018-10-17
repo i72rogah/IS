@@ -18,4 +18,4 @@
 
 
   **Flujo secundario**:  
-  2. a: Si el fichero binario no existe, muestra mensaje de error.
+  1. a: Si el fichero binario no existe, muestra mensaje de error.
