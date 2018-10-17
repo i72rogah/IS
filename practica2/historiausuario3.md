@@ -1,4 +1,4 @@
-# Historia de Usuario 2
+# Historia de Usuario 3
 ## (ANVERSO)  
 
 **ID**:003 **Mostrar Alumno**  
