@@ -1,9 +1,9 @@
 ## Mostrar alumnos  
-*ID*: 003  
-*Breve descripción*: El usuario podrá ver los alumnos del sistema  
+**ID**: 003  
+**Breve descripción**: El usuario podrá ver los alumnos del sistema  
 
   **Actores principales**: Usuario  
-**Actores secundario**: Alumno  
+**Actores secundario**: Alumnos  
 
   **Precondiciones**:  
   1. Debe existir al menos un alumno.  
@@ -11,7 +11,7 @@
 
   **Flujo principal**:  
   1. El caso de uso empieza cuando el usuario desea ver los alumnos.  
-  2. El sistema muestra los alumnos.  
+  2. El sistema muestra todos los alumnos o los de un grupo concreto, a decisión del usuario.  
 
 
   **Postcondiciones**:  

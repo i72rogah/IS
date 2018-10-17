@@ -1,6 +1,6 @@
 ## Modificar Alumno  
-*ID*: 002  
-*Breve descripción*: El usuario podrá modificar un alumno en el sistema  
+**ID**: 002  
+**Breve descripción**: El usuario podrá modificar un alumno en el sistema  
 
   **Actores principales**: Usuario  
 **Actores secundario**: Alumno  
