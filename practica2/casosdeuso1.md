@@ -1,6 +1,6 @@
 ## Introducir Alumno  
-*ID*:001  
-*Breve descripción*:  
+*ID*: 001  
+*Breve descripción*: El usuario introduce un alumno en el sistema  
 
   **Actores principales**: Usuario  
 **Actores secundario**: Alumno  
