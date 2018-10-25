@@ -3,7 +3,9 @@
 
 **ID**:006 **Ordenar Alumno alfabéticamente**  
 
-Como usuario quiero poder ordenar los alumnos para una visualización mejor.
+Como usuario quiero poder ordenar los alumnos para una visualización mejor.  
+
+  **Prioridad**: 3
 
 ## (REVERSO)  
 

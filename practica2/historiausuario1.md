@@ -5,6 +5,8 @@
 
 Como usuario quiero poder introducir un alumno para poder guardar su información.
 
+  **Prioridad**: 1
+
 ## (REVERSO)  
 
 Quiero poder introducir los distintos datos de un alumno (DNI,email,provincia...).  

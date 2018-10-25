@@ -3,7 +3,9 @@
 
 **ID**:005 **Importar y exportar datos del alumnado desde un fichero binario**  
 
-Como usuario quiero poder importar y exportar los datos de un fichero binario para su posterior uso.
+Como usuario quiero poder importar y exportar los datos de un fichero binario para su posterior uso.  
+
+  **Prioridad**: 1
 
 ## (REVERSO)  
 

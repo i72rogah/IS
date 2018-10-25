@@ -5,6 +5,8 @@
 
 Como usuario quiero poder mostrar un alumno para ver sus distintos datos.
 
+  **Prioridad**: 2  
+  
 ## (REVERSO)  
 
 Quiero poder visualizar todos los datos de un alumno.

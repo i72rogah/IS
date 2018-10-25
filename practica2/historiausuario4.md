@@ -3,7 +3,9 @@
 
 **ID**:004 **Borrar Alumno**  
 
-Como usuario quiero poder eliminar un alumno.  
+Como usuario quiero poder eliminar un alumno.
+
+  **Prioridad**: 3  
 
 ## (REVERSO)  
 
