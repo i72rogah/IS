@@ -127,7 +127,7 @@ Como usuario quiero poder mostrar todos los alumnos para ver sus distintos datos
 
 ## (REVERSO)  
 
-Quiero poder visualizar todos los datos de los alumnos.
+Quiero poder visualizar todos los datos de los alumnos.  
 Se debe mostrar claramente si cada alumno es el líder del equipo o no.
 
 # Historia de Usuario 11
@@ -141,7 +141,7 @@ Como usuario quiero poder mostrar los alumnos de un equipo especifico.
 
 ## (REVERSO)  
 
-Quiero poder visualizar todos los alumnos pertenecientes al equipo.
+Quiero poder visualizar todos los alumnos pertenecientes al equipo.  
 Se debe mostrar claramente cual de todos es el líder.
 
 # Historia de Usuario 12
@@ -155,7 +155,7 @@ Como usuario quiero poder mostrar un alumno a partir de su DNI o sus apellidos.
 
 ## (REVERSO)  
 
-Quiero poder visualizar todos los datos de un alumno.
+Quiero poder visualizar todos los datos de un alumno.  
 Se debe mostrar claramente si el alumno es el líder del equipo o no.
 
 # Historia de Usuario 13
@@ -169,5 +169,5 @@ Como usuario quiero poder ordenar los alumnos para una mejor visualización.
 
 ## (REVERSO)  
 
-Quiero poder ordenar a los alumnos por nombre, apellidos, DNI o curso mas alto.
+Quiero poder ordenar a los alumnos por nombre, apellidos, DNI o curso mas alto.  
 El sistema podrá ordenar a los alumnos de manera ascendente o descendente.
