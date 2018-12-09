@@ -3,12 +3,15 @@
 
 int buscarAlumno(std::string s){
 
-  list <Alumno>::iterator i;
+  list <Alumno>::iterator it;
+  list <Alumno> aux;
+  aux=getAlumnos();
   int cont=0;
 
-  for(i=alumno_.begin();i!=alumno_.end();i++)
-    if(i->getDNI()==s||i->getApellidos()==s){
+  for(it=aux.begin();it!=aux.end();it++){
+    if(it->getDNI()==s||it->getApellidos()==s){
       cont++;
     }
+  }
    return cont;
 }
