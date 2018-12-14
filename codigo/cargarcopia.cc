@@ -4,14 +4,14 @@
 #include <string>
 #include <iostream>
 
-void Profesor::cargarCopia(){
+void Profesor::cargarCopia(std::string nombre){
   Alumno a;
   list <Alumno> aux;
-  std::string nombreFichero;
-  std::cout << "Introduzca la fecha de la copia de seguridad(formato dd/mm/aaaa)" << '\n';
-  std::cin >> nombreFichero;
-  nombreFichero="copias/copia_"+nombreFichero+".bin";
-  ifstream fichero(nombreFichero.c_str(),std::ifstream::binary);
+  //std::string nombreFichero;
+  //std::cout << "Introduzca la fecha de la copia de seguridad(formato dd/mm/aaaa)" << '\n';
+  //std::cin >> nombreFichero;
+  nombre="copias/copia_"+nombre+".bin";
+  ifstream fichero(nombre.c_str(),std::ifstream::binary);
   if(!fichero.is_open()){ //comprobar fallo en apertura del fichero
     std::cout << "Copia de seguridad no encontrada" << '\n';
     exit(-1);

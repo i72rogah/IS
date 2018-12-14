@@ -37,7 +37,7 @@ public:
   inline Agenda* getPtrAgenda(){return ptrAgenda_;};
   void importarDatos();
   void exportarDatos();
-  void guardarCopia();
-  void cargarCopia();
+  void guardarCopia(std::string nombre);
+  void cargarCopia(std::string nombre);
 };
 #endif
