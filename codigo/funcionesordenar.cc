@@ -2,15 +2,15 @@
 #include "agenda.h"
 
 bool compare_dni_asc(Alumno a, Alumno b){
-  for(int i=0;i<a.getDNI().length()&&b.getDNI().length();i++){
-    if(tolower(a.getDNI()[i])<tolower(b.getDNI()[i])) return true;
-    else if(tolower(a.getDNI()[i])>tolower(b.getDNI()[i])) return false;
+  for(int i=0;i<a.getDni().length()&&b.getDni().length();i++){
+    if(tolower(a.getDni()[i])<tolower(b.getDni()[i])) return true;
+    else if(tolower(a.getDni()[i])>tolower(b.getDni()[i])) return false;
   }
 }
 bool compare_dni_desc(Alumno a, Alumno b){
-  for(int i=0;i<a.getDNI().length()&&b.getDNI().length();i++){
-    if(tolower(a.getDNI()[i])<tolower(b.getDNI()[i])) return false;
-    else if(tolower(a.getDNI()[i])>tolower(b.getDNI()[i])) return true;
+  for(int i=0;i<a.getDni().length()&&b.getDni().length();i++){
+    if(tolower(a.getDni()[i])<tolower(b.getDni()[i])) return false;
+    else if(tolower(a.getDni()[i])>tolower(b.getDni()[i])) return true;
   }
 }
 bool compare_nombre_asc(Alumno a, Alumno b){

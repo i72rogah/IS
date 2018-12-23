@@ -2,6 +2,8 @@
 #define PROFESOR_H
 
 #include <string>
+#include "agenda.h"
+
 class Profesor {
 private:
   std::string dni_;

@@ -1,10 +1,27 @@
 #include "agenda.h"
 #include "alumno.h"
 #include <list>
+#include <cstdlib>
 #include <iostream>
 
+bool compare_dni_asc(Alumno a, Alumno b);
+
+bool compare_dni_desc(Alumno a, Alumno b);
+
+bool compare_nombre_asc(Alumno a, Alumno b);
+
+bool compare_nombre_desc(Alumno a, Alumno b);
+
+bool compare_apell_asc(Alumno a, Alumno b);
+
+bool compare_apell_desc(Alumno a, Alumno b);
+
+bool compare_curso_asc(Alumno a, Alumno b);
+
+bool compare_curso_desc(Alumno a, Alumno b);
+
 void Agenda::ordenarAlf(){
-  list<Alumno> aux;
+  std::list<Alumno> aux;
   int opcion;
   aux=getAlumnos();
   if(aux.empty()){

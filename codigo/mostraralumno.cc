@@ -8,10 +8,10 @@ void Agenda::mostrarAlumno(std::string s){
   std::list<Alumno> aux;
   std::list<Alumno>::iterator it;
   aux=getAlumnos();
-  for(it=lista.begin();it!=lista.end();it++){
-    if(it->getDNI()==s||it->getApellidos()==s){
+  for(it=aux.begin();it!=aux.end();it++){
+    if(it->getDni()==s||it->getApellidos()==s){
       std::cout << "###############################################################" << '\n';
-      std::cout << "  - DNI: " <<it->getDNI()<< '\n';
+      std::cout << "  - DNI: " <<it->getDni()<< '\n';
       std::cout << "  - Nombre:" <<it->getNombre()<< '\n';
       std::cout << "  - Apellidos: " <<it->getApellidos()<< '\n';
       std::cout << "  - Telefono: " <<it->getTelefono()<< '\n';

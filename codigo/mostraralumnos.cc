@@ -1,6 +1,7 @@
 #include "alumno.h"
 #include "agenda.h"
 #include <iostream>
+#include <cstdlib>
 #include <list>
 
 void Agenda::mostrarAlumnos(){
@@ -11,9 +12,9 @@ void Agenda::mostrarAlumnos(){
     std::cout << "La agenda esta vacia" << '\n';
     exit(-1);
   }
-  for(it=lista.begin();it!=lista.end();it++){
+  for(it=aux.begin();it!=aux.end();it++){
     std::cout << "###############################################################" << '\n';
-    std::cout << "  - DNI: " <<it->getDNI()<< '\n';
+    std::cout << "  - DNI: " <<it->getDni()<< '\n';
     std::cout << "  - Nombre:" <<it->getNombre()<< '\n';
     std::cout << "  - Apellidos: " <<it->getApellidos()<< '\n';
     std::cout << "  - Telefono: " <<it->getTelefono()<< '\n';

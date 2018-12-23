@@ -2,11 +2,11 @@
 #include <list>
 
 void Agenda::borrarAlumno(std::string s){
-  list <Alumno> aux;
-  list <Alumno>::iterator it;
+  std::list <Alumno> aux;
+  std::list <Alumno>::iterator it;
   aux=getAlumnos();
   for(it=aux.begin();it!=aux.end();it++){
-    if(it->getDNI()==s||it->getApellidos()==s){
+    if(it->getDni()==s||it->getApellidos()==s){
       aux.erase(it);
     }
   }

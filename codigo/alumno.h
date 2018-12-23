@@ -16,8 +16,8 @@ private:
   bool lider_;
 
 public:
-  inline std::string getDNI(){return dni_;};
-  inline void setDNI(std::string dni){dni_=dni;};
+  inline std::string getDni(){return dni_;};
+  inline void setDni(std::string dni){dni_=dni;};
   //
   inline std::string getNombre(){return nombre_;};
   inline void setNombre(std::string nombre){nombre_=nombre;};

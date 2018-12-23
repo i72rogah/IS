@@ -3,9 +3,10 @@
 #include <list>
 #include <fstream>
 #include <iostream>
+#include <cstdlib>
 
 void Profesor::importarDatos(){
-  ifstream fichero(getNombreFichero().c_str(),std::ifstream::binary);
+  std::ifstream fichero(getNombreFichero().c_str(),std::ifstream::binary);
   Alumno a;
   std::list<Alumno> aux; //lista auxiliar para rellenar con alumnos
   if(!fichero.is_open()){ //comprobar fallo en apertura del fichero
@@ -15,7 +16,6 @@ void Profesor::importarDatos(){
   else{
     aux.clear();
     while(fichero.read((char *)&a, sizeof(Alumno)) && !fichero.eof()){
-    //  fichero.read((char *)&a, sizeof(Alumno)); //lee alumno del fichero
       aux.push_back(a);
     }
     ptrAgenda_->setAlumnos(aux);//copia la lista rellenada a la agenda

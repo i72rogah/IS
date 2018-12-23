@@ -2,6 +2,7 @@
 #include "agenda.h"
 #include <iostream>
 #include <list>
+#include <cstdlib>
 
 void Agenda::mostrarEquipo(int equipo){
   std::list<Alumno> aux;
@@ -11,10 +12,10 @@ void Agenda::mostrarEquipo(int equipo){
     std::cout << "La agenda esta vacia" << '\n';
     exit(-1);
   }
-  for(it=lista.begin();it!=lista.end();it++){
+  for(it=aux.begin();it!=aux.end();it++){
     if(it->getGrupo()==equipo){
       std::cout << "###############################################################" << '\n';
-      std::cout << "  - DNI: " <<it->getDNI()<< '\n';
+      std::cout << "  - DNI: " <<it->getDni()<< '\n';
       std::cout << "  - Nombre:" <<it->getNombre()<< '\n';
       std::cout << "  - Apellidos: " <<it->getApellidos()<< '\n';
       std::cout << "  - Telefono: " <<it->getTelefono()<< '\n';

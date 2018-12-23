@@ -1,5 +1,5 @@
 #include <iostream>
-//#include "auxiliares.h"
+#include <cstdio>
 
 int menu(){
   int opcion;
@@ -16,7 +16,8 @@ int menu(){
   std::cout << "10.- Cargar copia de seguridad" << '\n';
   std::cout << "11.- Guardar alumnos en copia de seguridad" << '\n';
   std::cout << "12.- Registrar nuevo profesor" << '\n';
-  //std::cout << "13.- " << '\n';
+  std::cout << "0.- Salir" << '\n';
+  std::cin.ignore();
   std::cin >> opcion;
   return opcion;
 }
