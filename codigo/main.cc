@@ -24,7 +24,7 @@ int main(int argc, char const *argv[]) {
   std::cin >> usuario;
   std::cout << "Contrasena: ";
   std::cin >> contrasena;
-  if(login(usuario,contrasena)=1){
+  if(login(usuario,contrasena)!=1){
     std::cout << "Usuario o contrasena incorrecto" << '\n';
     return 0;
   }

@@ -15,6 +15,7 @@ Profesor cargaProfesor(std::string s){
     while(fichero.read((char*)&p,sizeof(Profesor)) && !fichero.eof()){
       if(p.getDni()==s){
         return p;
+      }
     }
     std::cout << "No se han encontrado los datos del profesor" << '\n';
   }
