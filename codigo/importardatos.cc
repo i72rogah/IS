@@ -1,13 +1,16 @@
 #include "profesor.h"
 #include "alumno.h"
+#include "ficherobinario.h"
 #include <list>
 #include <fstream>
 #include <iostream>
 #include <cstdlib>
 
-void Profesor::importarDatos(){
+void Profesor::importarDatos(Agenda &ag){
   std::ifstream fichero(getNombreFichero().c_str(),std::ifstream::binary);
-  Alumno a;
+  Alumno a("");
+  //FicheroBinario fichero(getNombreFichero().c_str());
+  //fichero.openin();
   std::list<Alumno> aux; //lista auxiliar para rellenar con alumnos
   if(!fichero.is_open()){ //comprobar fallo en apertura del fichero
     std::cout << "Fichero local no encontrado" << '\n';
@@ -15,10 +18,11 @@ void Profesor::importarDatos(){
   }
   else{
     aux.clear();
-    while(fichero.read((char *)&a, sizeof(Alumno)) && !fichero.eof()){
+    while(fichero>>a&&!fichero.eof()){
+
       aux.push_back(a);
     }
-    ptrAgenda_->setAlumnos(aux);//copia la lista rellenada a la agenda
+    ag.setAlumnos(aux);//copia la lista rellenada a la agenda
+    fichero.close();//cierra fichero
   }
-  fichero.close();//cierra fichero
 }

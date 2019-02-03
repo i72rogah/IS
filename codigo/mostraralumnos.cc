@@ -10,7 +10,7 @@ void Agenda::mostrarAlumnos(){
   aux=getAlumnos();
   if(aux.empty()){
     std::cout << "La agenda esta vacia" << '\n';
-    exit(-1);
+    return;
   }
   for(it=aux.begin();it!=aux.end();it++){
     std::cout << "###############################################################" << '\n';

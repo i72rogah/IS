@@ -9,7 +9,7 @@
 void Agenda::modificarAlumno(std::string s){
   std::list <Alumno>::iterator it;
   std::list <Alumno> aux;
-  Alumno a;
+  Alumno a("");
   int opcionmenu=0;
   std::string opcion="s";
   std::string modificado;
@@ -99,10 +99,10 @@ void Agenda::modificarAlumno(std::string s){
       getline(std::cin,modificado);
       entero=atoi(modificado.c_str());
       if(entero==1){
-        a.setLider(true);
+        a.setLider(1);
       }
       else{
-        a.setLider(false);
+        a.setLider(0);
       }
       break;
     }

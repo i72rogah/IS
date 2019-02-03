@@ -1,6 +1,7 @@
 #ifndef ALUMNO_H
 #define ALUMNO_H
 #include <string>
+#include <fstream>
 
 class Alumno {
 private:
@@ -13,9 +14,10 @@ private:
   std::string fechanacimiento_;
   int curso_;
   int grupo_;
-  bool lider_;
+  int lider_;
 
 public:
+  Alumno(std::string dni,std::string nombre="",std::string apellidos="",std::string telefono="",std::string email="",std::string direccion="",std::string fechanacimiento="",int curso=0,int grupo=0,int lider=0);
   inline std::string getDni(){return dni_;};
   inline void setDni(std::string dni){dni_=dni;};
   //
@@ -43,9 +45,13 @@ public:
   inline int getGrupo(){return grupo_;};
   inline void setGrupo(int grupo){grupo_=grupo;};
   //
-  inline bool getLider(){return lider_;};
-  inline void setLider(bool lider){lider_=lider;};
+  inline int getLider(){return lider_;};
+  inline void setLider(int lider){lider_=lider;};
 
+  friend std::ostream &operator<<(std::ostream &escritura, Alumno &a);
+  friend std::istream &operator>>(std::istream &lectura, Alumno &a);
 
+  //void escribeAlumno(std::ofstream &f);
+  //Alumno leeAlumno(std::ifstream &f);
 };
 #endif

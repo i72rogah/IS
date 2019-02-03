@@ -15,7 +15,7 @@ int login(std::string usuario,std::string contrasena);
 
 int main(int argc, char const *argv[]) {
   int opcion=99,entero;
-  Profesor p;
+  Profesor p("");
   Agenda ag;
   Agenda* ptr=&ag;
   std::string aux, usuario, contrasena;
@@ -24,12 +24,13 @@ int main(int argc, char const *argv[]) {
   std::cin >> usuario;
   std::cout << "Contrasena: ";
   std::cin >> contrasena;
-  if(login(usuario,contrasena)!=1){
+  if(login(usuario,contrasena)==1){
     std::cout << "Usuario o contrasena incorrecto" << '\n';
     return 0;
   }
   else{
-    p=cargaProfesor(aux);
+    p=cargaProfesor(usuario);
+    if(p.getDni()==""){return 0;}//no se ha encontrado el fichero o los datos del profesor
     p.setPtrAgenda(ptr);
     while(opcion!=0){
       opcion=menu();
@@ -145,31 +146,31 @@ int main(int argc, char const *argv[]) {
         ag.ordenarAlf();
         break;
         case 8:
-        p.importarDatos();
+        p.importarDatos(ag);
         break;
         case 9:
-        p.exportarDatos();
+        p.exportarDatos(ag);
         break;
         case 10:
-        if(p.getCoordinador()==false){
+        if(p.getCoordinador()==0){
           std::cout << "No tiene permisos para realizar esta opcion" << '\n';
         }
         else{
           std::cout << "Introduzca la fecha de la copia de seguridad(formato dd/mm/aaaa)" << '\n';
           std::cin.ignore();
           std::cin >> aux;
-          p.cargarCopia(aux);
+          p.cargarCopia(aux,ag);
         }
         break;
         case 11:
-        if(p.getCoordinador()==false){
+        if(p.getCoordinador()==0){
           std::cout << "No tiene permisos para realizar esta opcion" << '\n';
         }
         else{
           std::cout << "Introduzca la fecha de hoy para la copia de seguridad(formato dd/mm/aaaa)" << '\n';
           std::cin.ignore();
           std::cin >> aux;
-          p.guardarCopia(aux);
+          p.guardarCopia(aux,ag);
         }
         break;
         case 12:
